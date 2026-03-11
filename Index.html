@@ -827,19 +827,44 @@
 
   /* RESPONSIVE */
   @media (max-width: 640px) {
-    .card-body, .card-header { padding-left: 20px; padding-right: 20px; }
-    .progress-wrap { padding-left: 20px; padding-right: 20px; }
+    .card-body, .card-header { padding-left: 16px; padding-right: 16px; }
+    .progress-wrap { padding-left: 16px; padding-right: 16px; }
+    .hero { padding: 36px 16px 48px; }
+    .hero h1 { font-size: 1.8rem; }
+    .hero-sub { font-size: 0.85rem; }
+    .hero-stats { gap: 16px; }
+    .h-stat-num { font-size: 1.4rem; }
     .numbers-grid { grid-template-columns: 1fr 1fr; }
-    .hero { padding: 44px 20px 60px; }
-    .deadline-card { flex-direction: column; gap: 16px; }
+    .deadline-card { flex-direction: column; gap: 16px; padding: 20px; }
     .input-wrap { margin-left: 0; }
     .radio-toggle { margin-left: 0; }
     .slider-block { margin-left: 0; }
     .field-note { margin-left: 0; }
+    .cta-row { flex-direction: column; }
+    .cta-row .btn-cta-primary,
+    .cta-row .btn-cta-secondary,
+    .cta-row a { width: 100%; text-align: center; justify-content: center; box-sizing: border-box; }
+    .btn-primary { width: 100%; }
+    .nav-inner { padding: 0 16px; }
+    .nav-cta { display: none; }
+    .trigger-item { padding: 14px 16px; }
+    .tip-item { padding: 14px 16px; }
+    .breakdown-row { font-size: 0.8rem; }
+  }
+
+  @media (max-width: 480px) {
+    .numbers-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+    .number-card { padding: 14px; }
+    .number-val { font-size: 1.3rem; }
+    .hero h1 { font-size: 1.5rem; }
+    .card-header { padding: 18px 16px; }
+    .status-banner { padding: 20px 16px; }
+    .status-amount { font-size: 2rem; }
   }
 
   @media (max-width: 400px) {
     .numbers-grid { grid-template-columns: 1fr; }
+    .hero-stats { flex-direction: column; gap: 10px; align-items: flex-start; }
   }
 </style>
 <!-- NAV -->
